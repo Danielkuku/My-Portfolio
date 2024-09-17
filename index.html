@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Kuku's Portfolio</title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Animate on scroll -->
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a68566b9c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- swipper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="icon" href="images/logo.jpg" />
+  </head>
+  <body>
+    <!-- start of navbar -->
+    <nav>
+      <div class="container nav-container">
+        <a href="index.html"><img src="images/logo.jpg" alt="" /></a>
+        <button class="nav-theme-btn">
+          <i class="bi bi-moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- floating nav -->
+    <menu class="floating-nav">
+      <a href="#" class="active"><i class="fa-solid fa-house"></i></a>
+      <a href="#resume"><i class="fa-solid fa-user"></i></a>
+      <a href="#projects"><i class="fa-solid fa-suitcase"></i></a>
+      <a href="#testimonials"><i class="fa-solid fa-comment"></i></a>
+      <a href="#faqs"><i class="fa-solid fa-circle-question"></i></a>
+      <a href="#contact"><i class="fa-solid fa-phone"></i></a>
+    </menu>
+
+    <!-- header section -->
+    <header>
+      <div class="header-container">
+        <div class="header-image" data-aos="fade-up" data-aos-delay="800">
+          <img src="images/Daniel.jpeg" alt="header-image" />
+        </div>
+        <h5 data-aos="fade-up" data-aos-delay="800">Hi, I'm Daniel</h5>
+        <h1 data-aos="fade-in" data-aos-delay="800">
+          FrontEnd <span>Web Developer</span><br />Base in Nigeria
+        </h1>
+        <p data-aos="fade-in" data-aos-delay="800">
+          I specialize in creating modern, responsive, and user-friendly
+          websites. With a keen eye for design and a love for problem-solving, I
+          transform ideas into seamless digital experiences.
+        </p>
+        <div class="header-actions" data-aos="fade-in" data-aos-delay="800">
+          <a href="#projects" class="btn">My Projects</a>
+          <a href="#contact" class="btn-primary btn">Hire me</a>
+        </div>
+        <menu class="header-socials" data-aos="fade-in" data-aos-delay="800">
+          <a href="https://github.com/Danielkuku"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/daniel-kuku-219a151b0/"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/doctadge/"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://twitter.com/cristobal_kuku"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+        </menu>
+      </div>
+    </header>
+
+    <!-- Resume section -->
+
+    <section id="resume">
+      <div
+        class="container resume-container"
+        data-aos="fade-in"
+        data-aos-delay="200"
+      >
+        <div class="resume-left">
+          <h1>Why hire me?</h1>
+          <p>Kindly click on the buttons below to know more about me.</p>
+          <menu>
+            <button class="btn btn-primary experience-btn">Experience</button>
+            <button class="btn education-btn">Education</button>
+            <button class="btn skills-btn">Skills</button>
+            <button class="btn about-btn">About Me</button>
+          </menu>
+        </div>
+        <div class="resume-right"></div>
+      </div>
+    </section>
+
+    <!-- start of projects section -->
+    <section class="projects" id="projects">
+      <h1>Recent Projects</h1>
+      <p class="project-statement">
+        Check out my recent projects listed below to see how I bring ideas to
+        life through innovative web development. Each project showcases my
+        skills and passion for creating engaging, user-friendly websites. Feel
+        free to explore and see what I’ve been working on!
+      </p>
+      <!-- <menu class="projects-categories">
+        <button class="btn active">All</button>
+      </menu> -->
+      <div
+        class="container project-container"
+        data-aos="fade-in"
+        data-aos-delay="200"
+      >
+        <article class="project">
+          <div class="project-image">
+            <img src="images/project1.jpg" alt="project one" />
+          </div>
+          <h5>Shop-Online - E-commerce Website</h5>
+          <p>
+            Shop-Online is a responsive e-commerce site showcasing products with
+            detailed descriptions. It features a user-friendly interface,
+            shopping cart functionality, and is optimized for all devices. Built
+            with HTML, CSS, and JavaScript. Explore the live site.
+          </p>
+          <div class="project-CTA cta-two">
+            <a
+              href="https://danielkuku.github.io/Shop-Online/"
+              class="btn btn-primary"
+              target="_blank"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+            <a
+              href="https://github.com/Danielkuku/Shop-Online"
+              class="btn"
+              target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-image">
+            <img src="images/project2.jpg" alt="project two" />
+          </div>
+          <h5>Mortgage Repayment Calculator (Frontend Mentor Challenge)</h5>
+          <p>
+            Mortgage Repayment Calculator is a tool for estimating monthly
+            mortgage payments. Users can input loan amount, interest rate, and
+            term to get accurate repayment figures. Designed with HTML, CSS, and
+            JavaScript, it offers a straightforward, responsive interface.
+            Explore the live calculator.
+          </p>
+          <div class="project-CTA">
+            <a
+              href="https://danielkuku.github.io/Mortgage-Repayment-Calculator/"
+              class="btn btn-primary"
+              target="_blank"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+            <a
+              href="https://github.com/Danielkuku/Mortgage-Repayment-Calculator"
+              class="btn"
+              target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-image">
+            <img src="images/project3.jpg" alt="project three" />
+          </div>
+          <h5>Reel - Online-Streaming Movie Website</h5>
+          <p>
+            Reel is a sleek and modern website showcasing a collection of media
+            content. It features an interactive, user-friendly interface for
+            browsing and viewing media. Built with HTML, CSS, and JavaScript,
+            the site is fully responsive. Check out the live project.
+          </p>
+          <div class="project-CTA cta-two">
+            <a
+              href="https://danielkuku.github.io/Reel/"
+              class="btn btn-primary"
+              target="_blank"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+            <a
+              href="https://github.com/Danielkuku/Reel"
+              class="btn"
+              target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-image">
+            <img src="images/project4.jpg" alt="project four" />
+          </div>
+          <h5>Talkio - Social Media Website</h5>
+          <p>
+            Talkio is an interactive website designed for communication and
+            engagement. It features a clean, user-friendly interface for users
+            to participate in discussions. Developed with HTML, CSS, and
+            JavaScript, Talkio offers a responsive design that works well on all
+            devices. kindly click on the theme icon to get the font size for
+            your screen and also to change the background color and text color.
+            Explore the live site.
+          </p>
+          <div class="project-CTA cta-two">
+            <a
+              href="https://danielkuku.github.io/Talkio/"
+              class="btn btn-primary"
+              target="_blank"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+            <a
+              href="https://github.com/Danielkuku/Talkio"
+              class="btn"
+              target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-image">
+            <img src="images/project5.jpg" alt="project five" />
+          </div>
+          <h5>NextGenTech - Education Website</h5>
+          <p>
+            NextGenTech is an educational website offering insights into
+            emerging technologies and trends. With a modern, responsive layout,
+            it provides an engaging learning experience. Built using HTML, CSS,
+            and JavaScript, the site aims to educate and inform users about the
+            latest tech developments. Explore the live site here.
+          </p>
+          <div class="project-CTA cta-two-1">
+            <a
+              href="https://nextgentechh.netlify.app/"
+              class="btn btn-primary"
+              target="_blank"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+            <a
+              href="https://github.com/Danielkuku/NextGenTech"
+              class="btn"
+              target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-image">
+            <img src="images/project6 .jpg" alt="project six" />
+          </div>
+          <h5>Aven - Admin DashBoard Website</h5>
+          <p>
+            Aven Dashboard is a sleek, user-friendly admin dashboard designed
+            for managing and visualizing data. It features interactive charts,
+            tables, and a responsive layout, built with HTML, CSS, and
+            JavaScript. Explore the live demo to see it in action.
+          </p>
+          <div class="project-CTA cta-two-2">
+            <a
+              href="https://aven-dashborad.netlify.app/"
+              class="btn btn-primary"
+              target="_blank"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+            <a
+              href="https://github.com/Danielkuku/Aven"
+              class="btn"
+              target="_blank"
+              ><i class="bi bi-github"></i
+            ></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+
+    <section id="testimonials">
+      <h1>What people has to say about me.</h1>
+      <p class="testimonials-first-statement">
+        Read the comments bellow and also click on the link to see people
+        comments about me.
+      </p>
+      <div class="testimonial-all">
+        <p>
+          Shoutout to Daniel Kuku. <br />He has been quite outstanding in
+          Frontend development. I gave them a project from Frontend mentor and
+          as a Beginner he was really impressive. <br />
+          <br />
+          This is a testament to his skills and dedication.
+        </p>
+        <div class="testimonial-details">
+          <div class="testimonial-img">
+            <img src="images/testimonial-img.jfif" alt="testimonial-img1" />
+          </div>
+          <div class="testimonial-details-name">
+            <h5>Yusuf Aiyegbajeje</h5>
+            <small>Software Developer || Faculty Instructor @ Aptech</small>
+            <br />
+            <small>Kindly click on the link to see the testimonial</small>
+            <a href="https://bit.ly/3zvUvDX" target="_blank"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div>
+          <!-- <div class="testimonial-details-link">
+            <a href="https://bit.ly/3zvUvDX"
+              ><i class="bi bi-link-45deg"></i
+            ></a>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQS -->
+    <setion id="faqs">
+      <h1 class="faqs-h1">Frequently Asked Questions</h1>
+      <p class="faqs-p">
+        Here are some frequently asked questions to help you find the
+        information you need quickly. If you have any other questions or need
+        further assistance, feel free to reach out!
+      </p>
+      <menu class="container faq-container">
+        <li class="faqs-item" data-aos="fade-in" data-aos-delay="200">
+          <div class="faqs-item-top">
+            <span class="faqs-icon">
+              <i class="fa-solid fa-angle-down"></i>
+            </span>
+            <h5>Are you available for collaborations?</h5>
+          </div>
+          <div class="faqs-item-buttom">
+            <span></span>
+            <p>
+              Yes, I am available for collaborations! I’m always open to working
+              on exciting projects and exploring new opportunities. Feel free to
+              reach out if you have a collaboration in mind or if you’d like to
+              discuss potential projects. Looking forward to connecting!
+            </p>
+          </div>
+        </li>
+        <li class="faqs-item" data-aos="fade-in" data-aos-delay="200">
+          <div class="faqs-item-top">
+            <span class="faqs-icon">
+              <i class="fa-solid fa-angle-down"></i>
+            </span>
+            <h5>Do you work alone or as a team?</h5>
+          </div>
+          <div class="faqs-item-buttom">
+            <span></span>
+            <p>
+              I handle projects independently but am open to collaborating with
+              others or working as part of a team if the opportunity arises. I
+              enjoy the flexibility of both solo work and teamwork, depending on
+              the project's needs. Looking forward to connecting!
+            </p>
+          </div>
+        </li>
+      </menu>
+    </setion>
+
+    <section id="contact">
+      <div class="container contact-container">
+        <menu class="contact-options">
+          <a
+            href="mailto:cristobaldaniel022@gmail.com"
+            class="contact-option"
+            target="_blank"
+            ><i class="bi bi-envelope-at-fill"></i
+          ></a>
+          <a
+            href="https://twitter.com/cristobal_kuku"
+            class="contact-option"
+            target="_blank"
+            ><i class="bi bi-twitter-x"></i
+          ></a>
+          <a
+            href="https://wa.me/+2348051641240"
+            class="contact-option"
+            target="_blank"
+            ><i class="bi bi-whatsapp"></i
+          ></a>
+          <a href="tel:+2348167041876" class="contact-option" target="_blank"
+            ><i class="fa-solid fa-phone"></i
+          ></a>
+        </menu>
+        <p>Kindly send me a direct mail by filling the form below.</p>
+        <form
+          action="https://formsubmit.co/cristobaldaniel022@gmail.com"
+          method="POST"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <input type="text" name="Name" placeholder="Full Name" required />
+          <input
+            type="email"
+            name="E-mail Address"
+            placeholder="E-mail Address"
+            required
+          />
+          <textarea
+            name="Message"
+            placeholder="Message"
+            rows="7"
+            required
+          ></textarea>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="scripts.js"></script>
+    <!-- might want to use a swipper js later when i have multiple testimonials -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 2000, offset: 80 });
+    </script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
