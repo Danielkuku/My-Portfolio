@@ -1,18 +1,47 @@
 // for floatingNav
 
+// const floatingNavs = document.querySelectorAll(".floating-nav a");
+
+// const removeActiveClass = () => {
+//   floatingNavs.forEach((nav) => {
+//     nav.classList.remove("active");
+//   });
+// };
+
+// floatingNavs.forEach((nav) => {
+//   nav.addEventListener("click", () => {
+//     removeActiveClass(); // Remove active class from all links
+//     nav.classList.add("active"); // Add active class to the clicked link
+//   });
+// });
+
 const floatingNavs = document.querySelectorAll(".floating-nav a");
 
+// Function to remove "active" class from all nav links
 const removeActiveClass = () => {
   floatingNavs.forEach((nav) => {
     nav.classList.remove("active");
   });
 };
 
-floatingNavs.forEach((nav) => {
+// Function to set the active class on the clicked icon and store it in localStorage
+floatingNavs.forEach((nav, index) => {
   nav.addEventListener("click", () => {
     removeActiveClass(); // Remove active class from all links
     nav.classList.add("active"); // Add active class to the clicked link
+    localStorage.setItem("activeIcon", index); // Store the index of the clicked icon in localStorage
   });
+});
+
+// On page load, check localStorage for the active icon and set it
+window.addEventListener("DOMContentLoaded", () => {
+  const activeIndex = localStorage.getItem("activeIcon");
+
+  // If an icon was previously clicked, make it active
+  if (activeIndex !== null) {
+    removeActiveClass(); // Ensure no other icon has the "active" class
+    floatingNavs[activeIndex].classList.add("active");
+  }
 });
 
 // for resume
@@ -208,18 +237,57 @@ faqs.forEach((faq) => {
 });
 
 // THEME
+// const themeToggler = document.querySelector(".nav-theme-btn");
+// themeToggler.addEventListener("click", () => {
+//   document.body.classList.toggle("dark-theme-variables");
+//   if (document.body.classList == "") {
+//     themeToggler.innerHTML = `<i class="bi bi-brightness-high-fill"></i>`;
+//     window.localStorage.setItem("portfolio-theme", "");
+//   } else {
+//     themeToggler.innerHTML = ` <i class="bi bi-moon"></i>`;
+//     window.localStorage.setItem("portfolio-theme", "dark-theme-variables");
+//   }
+// });
+
+// //use theme from local strorage if the page load or relaod
+// const bodyClass = window.localStorage.getItem("portfolio-theme");
+// document.body.className = bodyClass;
+
+// Get the theme toggler button
 const themeToggler = document.querySelector(".nav-theme-btn");
-themeToggler.addEventListener("click", () => {
-  document.body.classList.toggle("dark-theme-variables");
-  if (document.body.classList == "") {
+
+// Function to update the icon based on the current theme
+const updateThemeIcon = () => {
+  if (document.body.classList.contains("dark-theme-variables")) {
+    // If the page is in dark mode, show the moon icon
     themeToggler.innerHTML = `<i class="bi bi-moon"></i>`;
-    window.localStorage.setItem("portfolio-theme", "");
   } else {
+    // If the page is in light mode, show the brightness icon
     themeToggler.innerHTML = `<i class="bi bi-brightness-high-fill"></i>`;
-    window.localStorage.setItem("portfolio-theme", "dark-theme-variables");
   }
+};
+
+// When the theme toggler button is clicked
+themeToggler.addEventListener("click", () => {
+  // Toggle the dark mode class on the body
+  document.body.classList.toggle("dark-theme-variables");
+
+  // If dark mode is active, save it to localStorage, otherwise save an empty string
+  if (document.body.classList.contains("dark-theme-variables")) {
+    window.localStorage.setItem("portfolio-theme", "dark-theme-variables");
+  } else {
+    window.localStorage.setItem("portfolio-theme", "");
+  }
+
+  // Update the icon to match the current theme
+  updateThemeIcon();
 });
 
-//use theme from local strorage if the page load or relaod
-const bodyClass = window.localStorage.getItem("portfolio-theme");
-document.body.className = bodyClass;
+// Use the theme from localStorage when the page loads or reloads
+const savedTheme = window.localStorage.getItem("portfolio-theme");
+if (savedTheme) {
+  document.body.classList.add(savedTheme);
+}
+
+// Make sure the correct icon is displayed on page load
+updateThemeIcon();
