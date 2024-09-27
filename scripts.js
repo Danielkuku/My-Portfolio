@@ -156,6 +156,7 @@ Below is a summary of the key skills I have developed throughout my journey in F
   <li><img src="images/CSS-logo.png" alt="css logo" /></li>
   <li><img src="images/bootstrap-logo.png" alt="bootstrap logo" /></li>
   <li><img src="images/jQuery-logo.png" alt="jQuery logo" /></li>
+  <li><img src="images/tailwind.png" alt="tailwind logo"></li>
 </ul>`;
 
 const skillsBtn = document.querySelector(".skills-btn");
