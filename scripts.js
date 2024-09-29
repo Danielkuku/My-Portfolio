@@ -54,7 +54,7 @@ const experienceContent = ` <h4>Experience</h4>
           <ul>
           <li>
               <h6>April 2024 - Present</h6>
-              <h5>FrontEnd Developer</h5>
+              <h5>Frontend Developer</h5>
               <h6>Aptech Computer Education.</h6><br>
               <p>Developed and maintained responsive and interactive web applications using HTML, CSS, JavaScript.</p><br>
               <p>Applied JavaScript to improve user experience by adding interactivity such as dropdown menus, modals, and form validations, ensuring smooth and user-friendly interactions.</p><br>
@@ -62,7 +62,7 @@ const experienceContent = ` <h4>Experience</h4>
             </li>
             <li>
               <h6>Jan 2024 - April 2024</h6>
-              <h5>FrontEnd Developer Intern.</h5>
+              <h5>Frontend Developer Intern.</h5>
               <h6>Trendnet Technologies.</h6><br>
               <p>Designed and implemented visually appealing user interfaces (UI) using Javascript,  HTML, CSS and Bootstrap, ensuring a seamless and intuitive user experience.</p><br>
               <p>Built interactive and dynamic web applications utilizing JavaScript, enhancing user engagement and interactivity through features like form validation, real-time updates, and animated elements.</p><br>
