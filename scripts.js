@@ -52,18 +52,22 @@ const experienceContent = ` <h4>Experience</h4>
             As a Frontend Developer, I have gained experience in building and optimizing user-friendly websites. My focus is on delivering clean, responsive interfaces and ensuring seamless user experiences.
           </p>
           <ul>
-            <li>
-              <h6>2023 - Present</h6>
-              <h5>Freelance FrontEnd Developer</h5>
-              <p>Providing tailored front-end solutions, building responsive websites, and ensuring smooth user experiences through modern web technologies. Specializing in HTML, CSS, JavaScript, and responsive design to create engaging and functional user interfaces.</p>
-            </li>
-            <li>
+          <li>
               <h6>April 2024 - Present</h6>
               <h5>FrontEnd Developer</h5>
-              <p>Aptech Computer Education.</p> <br>
-              <p>Developed and maintained responsive and interactive web applications using HTML, CSS, JavaScript. <br> <br> Worked on debugging, testing, and deploying web applications to ensure seamless functionality.</p>
+              <h6>Aptech Computer Education.</h6><br>
+              <p>Developed and maintained responsive and interactive web applications using HTML, CSS, JavaScript.</p><br>
+              <p>Applied JavaScript to improve user experience by adding interactivity such as dropdown menus, modals, and form validations, ensuring smooth and user-friendly interactions.</p><br>
+              <p>Worked in collaboration with designers and backend developers to integrate APIs and design mockups into functional, user-friendly web applications using HTML, CSS, Bootstrap, and JavaScript.</p>
             </li>
-         
+            <li>
+              <h6>Jan 2024 - April 2024</h6>
+              <h5>FrontEnd Developer Intern.</h5>
+              <h6>Trendnet Technologies.</h6><br>
+              <p>Designed and implemented visually appealing user interfaces (UI) using Javascript,  HTML, CSS and Bootstrap, ensuring a seamless and intuitive user experience.</p><br>
+              <p>Built interactive and dynamic web applications utilizing JavaScript, enhancing user engagement and interactivity through features like form validation, real-time updates, and animated elements.</p><br>
+              <p>Worked closely with the design team to transform wireframes and mockups into fully functional frontend code, ensuring precise implementation and consistency across diverse devices and browsers.</p>
+            </li>
           </ul>`;
 
 const experienceBtn = document.querySelector(".experience-btn");
